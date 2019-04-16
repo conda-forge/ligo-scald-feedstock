@@ -35,6 +35,7 @@ requirements:
     - bottle
     - ligo-common
     - ligo-segments
+    - urllib3
 
 test:
   imports:
