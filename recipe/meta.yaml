@@ -1,6 +1,6 @@
 {% set name = "ligo-scald" %}
-{% set version = "0.2.1" %}
-{% set sha256 = "0e1ab0341c033c7d3a6a539925cc0691cc4d7d03d769c9800ad107ff2994d298" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "41e6b1877e618dcc6170715a7353d973caf8b698690388e0e923a593b2728066" %}
 
 package:
   name: {{ name }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
   entry_points:
