@@ -1,6 +1,6 @@
 {% set name = "ligo-scald" %}
-{% set version = "0.4.1" %}
-{% set sha256 = "13e525579f824d9944f43545a7d8ebd4c7537c171d0a296b8af6590e126dcee6" %}
+{% set version = "0.5.0" %}
+{% set sha256 = "1ed9e352c151481a0e63d3226fd1cab7910d2a4844ad2b0cdc20923c4563be96" %}
 
 package:
   name: {{ name }}
@@ -28,13 +28,11 @@ requirements:
     - setuptools
     - six
     - numpy >=1.7.1
-    - scipy
     - h5py >=2.3.0
-    - python-lal
     - pyyaml
     - bottle
+    - python-dateutil
     - ligo-common
-    - ligo-segments
     - urllib3
 
 test:
