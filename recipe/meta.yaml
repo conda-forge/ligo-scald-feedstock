@@ -28,13 +28,11 @@ requirements:
     - setuptools
     - six
     - numpy >=1.7.1
-    - scipy
     - h5py >=2.3.0
-    - python-lal
     - pyyaml
     - bottle
+    - python-dateutil
     - ligo-common
-    - ligo-segments
     - urllib3
 
 test:
