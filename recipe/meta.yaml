@@ -1,6 +1,6 @@
 {% set name = "ligo-scald" %}
-{% set version = "0.7.2" %}
-{% set sha256 = "0b09316f88ac766bb5c2e5e06a9c02e4eedc5fb75afcf31edc09d148f8e31e3b" %}
+{% set version = "0.8.0" %}
+{% set sha256 = "7801418996b001da0bffd285cfef02cf6c243e0e09339aceff81e63764df4830" %}
 
 package:
   name: {{ name }}
@@ -19,20 +19,17 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - setuptools
 
   run:
-    - python
+    - python >=3.6
     - setuptools
-    - six
     - numpy >=1.7.1
-    - h5py >=2.3.0
     - pyyaml
     - bottle
     - python-dateutil
-    - ligo-common
     - urllib3
 
 test:
@@ -46,7 +43,7 @@ test:
 
 about:
   home: https://git.ligo.org/gstlal-visualisation/ligo-scald
-  license: GPLv2+
+  license: GPL-2.0-or-later
   license_family: GPL
   license_file: LICENSE
   doc_url: https://docs.ligo.org/gstlal-visualisation/ligo-scald
