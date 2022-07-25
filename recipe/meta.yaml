@@ -1,6 +1,6 @@
 {% set name = "ligo-scald" %}
-{% set version = "0.8.0" %}
-{% set sha256 = "7801418996b001da0bffd285cfef02cf6c243e0e09339aceff81e63764df4830" %}
+{% set version = "0.8.1" %}
+{% set sha256 = "533dcf474e2ebb0f6e23f4d88be46ac55a392a3f8e809a6d7937de464c20a054" %}
 
 package:
   name: {{ name }}
@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
   entry_points:
     - scald = ligo.scald.__main__:main
 
@@ -52,4 +52,4 @@ about:
 
 extra:
   recipe-maintainers:
-    -  myNameIsPatrick
+    - myNameIsPatrick
