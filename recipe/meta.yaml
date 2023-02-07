@@ -19,20 +19,21 @@ build:
 
 requirements:
   host:
-    - python >=3.6
     - pip
-    - setuptools
-
-  run:
     - python >=3.6
     - setuptools
-    - numpy >=1.7.1
-    - pyyaml
+  run:
     - bottle
+    - numpy >=1.7.1
+    - python >=3.6
     - python-dateutil
+    - pyyaml
+    - setuptools
     - urllib3
 
 test:
+  requires:
+    - pip
   imports:
     - ligo.scald
     - ligo.scald.deploy
@@ -40,6 +41,12 @@ test:
     - ligo.scald.mock
     - ligo.scald.serve
     - ligo.scald.utils
+  commands:
+    # check metadata
+    - python -m pip check ligo-scald
+    - python -m pip show ligo-scald
+    # sanity-check entry points
+    - scald --help
 
 about:
   home: https://git.ligo.org/gstlal-visualisation/ligo-scald
@@ -52,4 +59,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - duncanmmacleod
     - myNameIsPatrick
