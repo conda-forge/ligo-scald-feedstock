@@ -1,11 +1,11 @@
-About ligo-scald
-================
+About ligo-scald-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ligo-scald-feedstock/blob/main/LICENSE.txt)
 
 Home: https://git.ligo.org/gstlal-visualisation/ligo-scald
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ligo-scald-feedstock/blob/main/LICENSE.txt)
 
 Summary: Gravitational-wave monitoring and data visualization tool
 
@@ -147,5 +147,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@duncanmmacleod](https://github.com/duncanmmacleod/)
 * [@myNameIsPatrick](https://github.com/myNameIsPatrick/)
 
