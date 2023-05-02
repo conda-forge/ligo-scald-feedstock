@@ -1,6 +1,6 @@
 {% set name = "ligo-scald" %}
-{% set version = "0.8.3" %}
-{% set sha256 = "58ef56400d235b513dde4e1c132c2094bc5e276e460f1eb412d677b4e6b6553e" %}
+{% set version = "0.8.4" %}
+{% set sha256 = "5cc539bb2dcd36bc36464a2929d7bde1479fcb2e219e12f83ef8d2c90afafe9d" %}
 
 package:
   name: {{ name }}
