@@ -1,17 +1,17 @@
 {% set name = "ligo-scald" %}
-{% set version = "0.8.4" %}
-{% set sha256 = "5cc539bb2dcd36bc36464a2929d7bde1479fcb2e219e12f83ef8d2c90afafe9d" %}
+{% set version = "0.8.5" %}
+{% set sha256 = "12b606fc868a77181d1095b72689bf1849ca307f2c97a149784b7509b7ae211b" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: http://software.ligo.org/lscsoft/source/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
   entry_points:
